@@ -35,6 +35,16 @@ gem 'capistrano-rails', group: :development
 gem 'capistrano-rbenv'
 gem 'capistrano-bundler'
 
+group :development, :test do
+ gem 'capistrano'
+ gem 'capistrano-bundler'
+ gem 'capistrano-rails'
+ gem 'capistrano-rbenv'
+end
+
+group :production, :staging do
+  gem 'unicorn'
+end
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
