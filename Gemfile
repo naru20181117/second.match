@@ -31,15 +31,26 @@ gem 'jbuilder', '~> 2.5'
 # gem 'mini_magick', '~> 4.8'
 
 # Use Capistrano for deployment
-gem 'capistrano-rails', group: :development
-gem 'capistrano-rbenv'
-gem 'capistrano-bundler'
+## gem 'capistrano-rails', group: :development
+## gem 'capistrano-rbenv'
+## gem 'capistrano-bundler'
 
-group :development, :test do
- gem 'capistrano'
- gem 'capistrano-bundler'
- gem 'capistrano-rails'
- gem 'capistrano-rbenv'
+## group :development, :test do
+## gem 'capistrano', '~> 3.0'
+## gem 'capistrano-bundler'
+## gem 'capistrano-rails'
+## gem 'capistrano-rbenv'
+## end
+
+group :deployment do
+  gem 'whenever', require: false
+
+#Deploy
+  gem 'capistrano', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rbenv', require: false
+  gem 'capistrano3-puma', require: false
 end
 
 group :production, :staging do
