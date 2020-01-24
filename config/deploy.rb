@@ -2,14 +2,14 @@ lock '3.11.1'
 
 set :repo_url,        'git@github.com:naru20181117/second.match.git'
 set :application,     'second.match'
-set :user,            'ec2-user'
+set :user,            'naruhiro'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 set :pty,             true
 set :use_sudo,        false
 set :stage,           :production
 set :deploy_via,      :remote_cache
-set :deploy_to,       '/var/www/second.match'
+set :deploy_to,       '/home/ec2-user/'
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"
 set :puma_pid,        "#{shared_path}/tmp/pids/puma.pid"
@@ -19,9 +19,9 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :rbenv_type, :user
-set :rbenv_path, '/usr/local/bin/rbenv'
+set :rbenv_path, '/home/ec2-user/.rbenv'
 set :rbenv_ruby, '2.6.3'
-set :rbenv_prefix, "RBENV_ROOT=/home/naruhiro/.rbenv/versions/2.6.3 #RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
+#set :rbenv_prefix, "RBENV_ROOT=/home/naruhiro/.rbenv/versions/2.6.3 #RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w[rake gem bundle ruby rails]
 set :linked_dirs, fetch(:linked_dirs, []).push(
   'log',
