@@ -31,4 +31,8 @@
 /config/master.key
 
 # ignore the personal images
+<<<<<<< HEAD
 # public/uploads/
+=======
+public/uploads/
+>>>>>>> c7e6d32c4faee300374cba0deb2dc44dfda48d10

@@ -162,7 +162,10 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.2)
       ast (~> 2.4.0)
+<<<<<<< HEAD
     pg (1.2.2)
+=======
+>>>>>>> c7e6d32c4faee300374cba0deb2dc44dfda48d10
     popper_js (1.14.5)
     pry (0.12.2)
       coderay (~> 1.1.0)
