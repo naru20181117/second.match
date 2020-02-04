@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TechpitMatch2</title>
+    <title>Matching.app</title>
     <%= csrf_meta_tags %>
     <meta name="current_user_id" content="<%= current_user.id if current_user %>">
     <meta name="viewport" content="width=device-width, initial-scale=1" >
@@ -10,8 +10,12 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if flash[:nohice] %>
+      <p><%= flash[:notice] %></p>
+    <%end%>
+    <% if flash[:alert] %>
+      <p><%= flash[:alert] %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

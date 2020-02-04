@@ -1,9 +1,13 @@
 if (/chat/.test(window.location.pathname)) {
   var path = window.location.pathname.split('/');
   var room_id = path[path.length - 1];
-  App.chat_room = App.cable.subscriptions.create({ channel: "ChatRoomChannel", room_id: room_id }, {
-    connected: function () { },
-    disconnected: function () { },
+  // setting for subscribe
+  App.chat_room = App.cable.subscriptions.create({
+    channel: "ChatRoomChannel",
+    room_id: room_id
+  }, {
+    connected: function () {},
+    disconnected: function () {},
     received: function (data) {
       $('.messages').append(data['content']);
     },

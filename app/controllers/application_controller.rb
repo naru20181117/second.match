@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  # set the strong parameter
   before_action :configure_permitted_parameters, if: :devise_controller?
   protect_from_forgery with: :exception
 
@@ -8,6 +9,7 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit(:sign_up, keys: %i(name self_introduction sex img_name))
     devise_parameter_sanitizer.permit(:account_update, keys: %i(name self_introduction sex img_name))
   end
+  # set by devise which can redirect after sign_in
   def after_sign_in_path_for(resource)
     users_path
   end
