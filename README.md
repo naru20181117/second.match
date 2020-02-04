@@ -8,16 +8,18 @@ Overview
 This is the matching site which is imitating the Dating app Tinder.
 
 ## Demo
-### This is the site.
-![Image from Gyazo](https://i.gyazo.com/beec420168f4cc55e1707ad2b2925af8.gif)
+### [This is the site.](https://first-match.herokuapp.com/)
+[![Image from Gyazo](https://i.gyazo.com/beec420168f4cc55e1707ad2b2925af8.gif)](https://first-match.herokuapp.com/)
+
 ---
 ## Dependency
-- Ruby              2.6.3
+- Ruby              2.6.5
 - Rails             5.2.3
 - bootstrap         4.1.3
 - jquery-rails      1.12.4
 - Ruby Sass         3.7.4
 - sqlite            1.3.6
+- rubocop
 ---
 ## Project setup
 - Fork the repository `naru20181117/second.match` to your repository.
