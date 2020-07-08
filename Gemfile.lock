@@ -1,5 +1,4 @@
 GEM
-  remote: https://rubygems.org/
   specs:
     actioncable (5.2.3)
       actionpack (= 5.2.3)
@@ -162,10 +161,7 @@ GEM
     parallel (1.19.1)
     parser (2.7.0.2)
       ast (~> 2.4.0)
-<<<<<<< HEAD
     pg (1.2.2)
-=======
->>>>>>> c7e6d32c4faee300374cba0deb2dc44dfda48d10
     popper_js (1.14.5)
     pry (0.12.2)
       coderay (~> 1.1.0)
@@ -329,4 +325,4 @@ RUBY VERSION
    ruby 2.6.5p114
 
 BUNDLED WITH
-   2.0.1
+   2.1.4
