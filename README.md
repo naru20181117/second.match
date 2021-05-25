@@ -1,24 +1,43 @@
-# README
+マッチングアプリ
+====
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Overview
 
-Things you may want to cover:
+## Description
 
-* Ruby version
+This is the matching site which is imitating the Dating app Tinder.
 
-* System dependencies
+## Demo
+### [This is the site.](https://first-match.herokuapp.com/)
+[![Image from Gyazo](https://i.gyazo.com/beec420168f4cc55e1707ad2b2925af8.gif)](https://first-match.herokuapp.com/)
 
-* Configuration
+---
+## Dependency
+- Ruby              2.6.5
+- Rails             5.2.3
+- bootstrap         4.1.3
+- jquery-rails      1.12.4
+- Ruby Sass         3.7.4
+- sqlite            1.3.6
+- rubocop
+---
+## Project setup
+- Fork the repository `naru20181117/second.match` to your repository.
+- Install the gem
+`bundle install`
+- Data setting
+`yarn install --check-files` # install yarn (comfirm that the file in node_modules is not deleted, plz)
+`rails db:create` # create the Datebase
+`rails db:migrate` # create the table
+- instace check
+`bundle exec rails server`
+Check if you can login to the host http://localhost:3000
 
-* Database creation
+## Licence
 
-* Database initialization
 
-* How to run the test suite
+## Author
 
-* Services (job queues, cache servers, search engines, etc.)
+[Twitter Account](https://twitter.com/1026NT)
 
-* Deployment instructions
 
-* ...
